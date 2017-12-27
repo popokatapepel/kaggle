@@ -43,8 +43,8 @@ predict_df['Sex'].replace(['female','male'],[0,1],inplace=True)
 
 #X = train_df.ix[:, ['Age', 'Pclass', 'Sex', 'SibSp', 'Parch', 'Fare']].values
 
-X = train_df.ix[:, ['Age', 'Pclass', 'Sex', 'SibSp','Fare']].values
-X_predict=predict_df.ix[:, ['Age', 'Pclass', 'Sex', 'SibSp','Fare']].values
+X = train_df.ix[:, ['Age', 'Pclass', 'Sex', 'SibSp']].values
+X_predict=predict_df.ix[:, ['Age', 'Pclass', 'Sex', 'SibSp']].values
 #X = train_df.ix[:, ['Age', 'Pclass', 'Sex']].values
 
 y=train_df['Survived'].values
